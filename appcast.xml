@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Cueshot</title>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Sun, 20 Sep 2026 19:14:14 +0200</pubDate>
+            <link>https://github.com/Tobbse007/cueshot-releases/releases</link>
+            <sparkle:version>173</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h2 style="margin-top:0">What's new in 1.0.0</h2>
+<ul>
+<li>Free during early access: no weekly limit, no subscription section, no account. A paid plan comes later.</li>
+<li>One speech model: NVIDIA Parakeet v3, 461 MB, 25 European languages. It listens while you speak, and the last piece is on screen well under a second after you let go.</li>
+<li>Text is tidied by rules — filler words out, punctuation in, your word list applied — instantly, and no word can be lost. The language-model cleanup and its 2.4 GB download are gone.</li>
+<li>Settings reduced to what matters: language, speech model, clean up, word list, keys, agent, updates, diagnostics.</li>
+<li>Recordings send more frames: up to 40 for long videos, sampled every half second, so what you show quickly is in the picture. Frames that don&#x27;t fit the agent&#x27;s context are listed with time and reason, ready to fetch one by one.</li>
+<li>New icon: the four corners of a viewfinder and a wave for the voice.</li>
+<li>Every dictation keeps its audio. Listen to it or transcribe it again from the History.</li>
+<li>Double-tap ⌘ takes a screenshot, double-tap ⌥ starts and stops a recording, one tap on ⌥ (right) marks a spot while recording, fn dictates.</li>
+<li>Diagnostics: copy the log of one dictation, or a timing report with the median per step.</li>
+<li>Cueshot updates itself: it checks once a day, shows you what&#x27;s new, and installs on your say-so — or on its own, if you turn that on under Updates. Your agent keeps working, because the MCP server travels inside the app.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/Tobbse007/cueshot-releases/releases/download/v1.0.0/Cueshot.dmg" length="14579571" type="application/octet-stream" sparkle:edSignature="ZPTs0oLI+gHcvhMTy18qfZ+Tm/4jgvjsyjHC0rEvVVEMk2ln3uYNxJGbOokVlpB47ZkUlR24oSmpTQddjSctCQ=="/>
+        </item>
+    </channel>
+</rss>
