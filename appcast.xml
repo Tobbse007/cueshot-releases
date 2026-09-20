@@ -3,29 +3,22 @@
     <channel>
         <title>Cueshot</title>
         <item>
-            <title>1.0.0</title>
-            <pubDate>Sun, 20 Sep 2026 21:01:38 +0200</pubDate>
+            <title>1.0.1</title>
+            <pubDate>Sun, 20 Sep 2026 21:32:25 +0200</pubDate>
             <link>https://github.com/Tobbse007/cueshot-releases/releases</link>
-            <sparkle:version>175</sparkle:version>
-            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:version>179</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h2 style="margin-top:0">What's new in 1.0.0</h2>
+            <description><![CDATA[<h2 style="margin-top:0">What's new in 1.0.1</h2>
 <ul>
-<li>Free during early access: no weekly limit, no subscription section, no account. A paid plan comes later.</li>
-<li>One speech model, 461 MB, 25 European languages, running on your Mac. It listens while you speak, and the last piece is on screen well under a second after you let go.</li>
-<li>Text is tidied by rules — filler words out, punctuation in, your word list applied — instantly, and no word can be lost. The old 2.4 GB cleanup model is gone.</li>
-<li>Settings reduced to what matters: language, speech recognition, clean up, word list.</li>
-<li>Recordings send more frames: up to 40 for long videos, sampled every half second, so what you show quickly is in the picture. Frames that don&#x27;t fit the agent&#x27;s context are listed with time and reason, ready to fetch one by one.</li>
-<li>New icon: the four corners of a viewfinder and a wave for the voice.</li>
-<li>Every dictation keeps its audio. Listen to it or transcribe it again from the History.</li>
-<li>Double-tap ⌘ takes a screenshot, double-tap ⌥ starts and stops a recording, one tap on ⌥ (right) marks a spot while recording, fn dictates.</li>
-<li>Diagnostics: copy the log of one dictation, or a timing report with the median per step.</li>
-<li>Five places in the window, not eight: History, Dictation, Shortcuts, Agent, Updates. The log, the subscription section and the per-dictation extras are gone.</li>
-<li>The installer window is the whole instruction: drag it across, that&#x27;s it.</li>
-<li>Cueshot updates itself: it checks once a day, shows you what&#x27;s new, and installs on your say-so — or on its own, if you turn that on under Updates. Your agent keeps working, because the MCP server travels inside the app.</li>
+<li>Inserting the last screenshot works again. The image never made it to the clipboard — only the text beside it did, which is why chat windows said nothing had arrived.</li>
+<li>Recording now shows the same voice wave as dictation, and every mark you set is confirmed in red for a moment.</li>
+<li>A recording that was interrupted mid-processing is finished on the next launch instead of being lost. Quitting waits for it.</li>
+<li>The steps after you let go read Listened, Processing, Inserted.</li>
+<li>The bundle count is right the first time, and it&#x27;s called a bundle everywhere.</li>
 </ul>]]></description>
-            <enclosure url="https://github.com/Tobbse007/cueshot-releases/releases/download/v1.0.0/Cueshot.dmg" length="14742534" type="application/octet-stream" sparkle:edSignature="aUucfnwXhnvSmfW75Q/VF/dO7jApe1FFwrJJ60uMhzYmH4+AwntK8CRXHIcxts8qdq+/e3O3GVeTDYX6niP0Bg=="/>
+            <enclosure url="https://github.com/Tobbse007/cueshot-releases/releases/download/v1.0.1/Cueshot.dmg" length="14732325" type="application/octet-stream" sparkle:edSignature="h4PZIpn9IS2MbtgafQNOtGyEeVeeg9zT0c7DI9+G1ZwcnEzhwm4TwUeaXJyQrKyND3qTOsZvZO2XQPrdrcEpDQ=="/>
         </item>
     </channel>
 </rss>
