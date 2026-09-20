@@ -3,22 +3,23 @@
     <channel>
         <title>Cueshot</title>
         <item>
-            <title>1.0.1</title>
-            <pubDate>Sun, 20 Sep 2026 21:32:25 +0200</pubDate>
+            <title>1.1.0</title>
+            <pubDate>Sun, 20 Sep 2026 22:36:50 +0200</pubDate>
             <link>https://github.com/Tobbse007/cueshot-releases/releases</link>
-            <sparkle:version>179</sparkle:version>
-            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:version>181</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h2 style="margin-top:0">What's new in 1.0.1</h2>
+            <description><![CDATA[<h2 style="margin-top:0">What's new in 1.1.0</h2>
 <ul>
-<li>Inserting the last screenshot works again. The image never made it to the clipboard — only the text beside it did, which is why chat windows said nothing had arrived.</li>
-<li>Recording now shows the same voice wave as dictation, and every mark you set is confirmed in red for a moment.</li>
-<li>A recording that was interrupted mid-processing is finished on the next launch instead of being lost. Quitting waits for it.</li>
-<li>The steps after you let go read Listened, Processing, Inserted.</li>
-<li>The bundle count is right the first time, and it&#x27;s called a bundle everywhere.</li>
+<li>Screenshots and Recordings each have their own place in the window. Every entry shows a preview, when it was taken, which app was in front, and — for a recording — how long it ran and what was said. Open it, show it in Finder, delete it, or put a screenshot back on the clipboard.</li>
+<li>Marking during a recording is visible at last: a red border says the marking layer is up, the box you drag is red, and it stays on screen for a moment saying &quot;Marked&quot;. The border never ends up in the video.</li>
+<li>The marking layer goes away on its own after ten seconds, and when the recording ends. That layer was invisible before — which is why the keyboard seemed dead until you hit Esc a few times.</li>
+<li>Cueshot says it when another app listens to the same double-tap. Claude opens its Quick Entry on a double-tap of ⌥ unless you change it, and both used to fire at once.</li>
+<li>&quot;Got it&quot; in What&#x27;s new is readable in dark mode.</li>
+<li>When a screenshot or a recording goes wrong, the log now says at which step.</li>
 </ul>]]></description>
-            <enclosure url="https://github.com/Tobbse007/cueshot-releases/releases/download/v1.0.1/Cueshot.dmg" length="14732325" type="application/octet-stream" sparkle:edSignature="h4PZIpn9IS2MbtgafQNOtGyEeVeeg9zT0c7DI9+G1ZwcnEzhwm4TwUeaXJyQrKyND3qTOsZvZO2XQPrdrcEpDQ=="/>
+            <enclosure url="https://github.com/Tobbse007/cueshot-releases/releases/download/v1.1.0/Cueshot.dmg" length="14781519" type="application/octet-stream" sparkle:edSignature="LB6SGH21nAfjPZaaTr0K60iC55kp6lDTzBF4W3DPrfonQKpsZP98dWOp6m07J1Rdb2PBAyZEKDt96B+YQGtxDg=="/>
         </item>
     </channel>
 </rss>
