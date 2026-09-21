@@ -3,20 +3,24 @@
     <channel>
         <title>Cueshot</title>
         <item>
-            <title>1.1.1</title>
-            <pubDate>Mon, 21 Sep 2026 13:21:04 +0200</pubDate>
+            <title>1.2.0</title>
+            <pubDate>Mon, 21 Sep 2026 15:12:21 +0200</pubDate>
             <link>https://github.com/Tobbse007/cueshot-releases/releases</link>
-            <sparkle:version>188</sparkle:version>
-            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+            <sparkle:version>193</sparkle:version>
+            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h2 style="margin-top:0">What's new in 1.1.1</h2>
+            <description><![CDATA[<h2 style="margin-top:0">What's new in 1.2.0</h2>
 <ul>
-<li>Signed with a Developer ID and notarized by Apple. The security warning on first launch is gone: no trip to System Settings, no &quot;Apple could not verify…&quot;. You will be asked for screen recording and accessibility once more after this update — the app&#x27;s identity changed from a self-made certificate to a real one, and macOS ties permissions to that identity.</li>
-<li>Share a screenshot or a recording straight from the history, and Cueshot itself from the menu.</li>
-<li>Anonymous usage counts now actually record what they promised to: which features get used, where setup breaks off, which errors occur. Still off until you say yes, still never any content.</li>
+<li>Setup now finishes what it starts. If macOS doesn&#x27;t show a dialog for a permission — because it was denied once before, or the entry belongs to an older version of Cueshot — setup opens System Settings at the right place instead of quietly stopping. That was why the microphone had to be found by hand.</li>
+<li>The speech model is part of setup. One download, with a progress bar, and it keeps running while you connect your coding agent. Before, you only found out it was missing the moment you wanted to dictate.</li>
+<li>A granted screen recording permission is tried, not believed. macOS doesn&#x27;t hand a fresh permission to an app that is already running, so setup checks whether recording actually works and asks for a restart when it doesn&#x27;t — instead of showing a green checkmark and a black picture.</li>
+<li>When a screen recording is refused although the permission is there, Cueshot says the real reason and offers to restart, instead of sending you to a switch you just flipped.</li>
+<li>Setup picks up where it left off after a restart, rather than starting at the welcome screen again.</li>
+<li>The last step says why nothing arrives when nothing arrives: input monitoring still missing, a restart still pending, or another app listening to the same double-tap.</li>
+<li>The menu reports a missing speech model the same way it reports a missing permission.</li>
 </ul>]]></description>
-            <enclosure url="https://github.com/Tobbse007/cueshot-releases/releases/download/v1.1.1/Cueshot.dmg" length="14836111" type="application/octet-stream" sparkle:edSignature="7bsDIEUlcYknlWASchRGxPPxzYRxMqyZWMnvfNwYBohawmEsGVmrYHGdkL8SJD1kSD7Kj9PeVygkXLI7U0VSCA=="/>
+            <enclosure url="https://github.com/Tobbse007/cueshot-releases/releases/download/v1.2.0/Cueshot.dmg" length="16210824" type="application/octet-stream" sparkle:edSignature="3BjUgZfjiIdCq/4yXuRpTsJSf+vSYpv1j0Ccd9+cJWk23xd23F8mqlc7zIutM+3JXZwhQ6z/LnqIbr7UIJ6YDQ=="/>
         </item>
     </channel>
 </rss>
