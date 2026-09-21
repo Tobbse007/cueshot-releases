@@ -3,23 +3,20 @@
     <channel>
         <title>Cueshot</title>
         <item>
-            <title>1.1.0</title>
-            <pubDate>Sun, 20 Sep 2026 22:36:50 +0200</pubDate>
+            <title>1.1.1</title>
+            <pubDate>Mon, 21 Sep 2026 13:21:04 +0200</pubDate>
             <link>https://github.com/Tobbse007/cueshot-releases/releases</link>
-            <sparkle:version>181</sparkle:version>
-            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:version>188</sparkle:version>
+            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h2 style="margin-top:0">What's new in 1.1.0</h2>
+            <description><![CDATA[<h2 style="margin-top:0">What's new in 1.1.1</h2>
 <ul>
-<li>Screenshots and Recordings each have their own place in the window. Every entry shows a preview, when it was taken, which app was in front, and — for a recording — how long it ran and what was said. Open it, show it in Finder, delete it, or put a screenshot back on the clipboard.</li>
-<li>Marking during a recording is visible at last: a red border says the marking layer is up, the box you drag is red, and it stays on screen for a moment saying &quot;Marked&quot;. The border never ends up in the video.</li>
-<li>The marking layer goes away on its own after ten seconds, and when the recording ends. That layer was invisible before — which is why the keyboard seemed dead until you hit Esc a few times.</li>
-<li>Cueshot says it when another app listens to the same double-tap. Claude opens its Quick Entry on a double-tap of ⌥ unless you change it, and both used to fire at once.</li>
-<li>&quot;Got it&quot; in What&#x27;s new is readable in dark mode.</li>
-<li>When a screenshot or a recording goes wrong, the log now says at which step.</li>
+<li>Signed with a Developer ID and notarized by Apple. The security warning on first launch is gone: no trip to System Settings, no &quot;Apple could not verify…&quot;. You will be asked for screen recording and accessibility once more after this update — the app&#x27;s identity changed from a self-made certificate to a real one, and macOS ties permissions to that identity.</li>
+<li>Share a screenshot or a recording straight from the history, and Cueshot itself from the menu.</li>
+<li>Anonymous usage counts now actually record what they promised to: which features get used, where setup breaks off, which errors occur. Still off until you say yes, still never any content.</li>
 </ul>]]></description>
-            <enclosure url="https://github.com/Tobbse007/cueshot-releases/releases/download/v1.1.0/Cueshot.dmg" length="14781519" type="application/octet-stream" sparkle:edSignature="LB6SGH21nAfjPZaaTr0K60iC55kp6lDTzBF4W3DPrfonQKpsZP98dWOp6m07J1Rdb2PBAyZEKDt96B+YQGtxDg=="/>
+            <enclosure url="https://github.com/Tobbse007/cueshot-releases/releases/download/v1.1.1/Cueshot.dmg" length="14836111" type="application/octet-stream" sparkle:edSignature="7bsDIEUlcYknlWASchRGxPPxzYRxMqyZWMnvfNwYBohawmEsGVmrYHGdkL8SJD1kSD7Kj9PeVygkXLI7U0VSCA=="/>
         </item>
     </channel>
 </rss>
