@@ -3,24 +3,19 @@
     <channel>
         <title>Cueshot</title>
         <item>
-            <title>1.2.2</title>
-            <pubDate>Mon, 21 Sep 2026 16:09:47 +0200</pubDate>
+            <title>1.2.3</title>
+            <pubDate>Mon, 21 Sep 2026 16:46:35 +0200</pubDate>
             <link>https://github.com/Tobbse007/cueshot-releases/releases</link>
-            <sparkle:version>201</sparkle:version>
-            <sparkle:shortVersionString>1.2.2</sparkle:shortVersionString>
+            <sparkle:version>203</sparkle:version>
+            <sparkle:shortVersionString>1.2.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h2 style="margin-top:0">What's new in 1.2.2</h2>
+            <description><![CDATA[<h2 style="margin-top:0">What's new in 1.2.3</h2>
 <ul>
-<li>Dictation lands in the text field again. Cueshot asked macOS only one way whether it had the Accessibility permission, and macOS kept answering &quot;no&quot; although the switch was on — so every dictation went to the clipboard instead, with a note saying the permission was missing. It now asks the way that tells the truth, the same way setup already did.</li>
-<li>Connecting a coding agent is one button, for every agent on this Mac at once. Cueshot writes the entry into each agent&#x27;s own settings file and reads it back — no terminal, nothing to copy. The old way ran the <code>claude</code> command, which an app started from Finder can&#x27;t find when Node is installed through nvm, fnm or Volta. That&#x27;s also why &quot;Node.js is missing&quot; used to appear on machines where Node was right there.</li>
-<li>The agent step shows what&#x27;s actually on this Mac — Claude Code, Cursor, Windsurf, Codex — with the state of each one, instead of four fixed logos.</li>
-<li>Agents get the full path to Node, so one started from Finder can launch the server too. Cueshot keeps that path current on every launch.</li>
-<li>When a permission is missing, Cueshot says what to do if it isn&#x27;t in the System Settings list — and can show itself in Finder so you can drag it in.</li>
-<li>System Settings now opens a moment later, after macOS has actually added Cueshot to the list. Opening too early was why the list sometimes came up without it.</li>
-<li>When dictation doesn&#x27;t reach the text field, the log says why.</li>
+<li>Accessibility no longer reports itself as granted when it isn&#x27;t. Setup asked macOS twice: once properly, and once by trying to read the frontmost app — in the belief that this only works with the permission. It also works without it when Cueshot itself is in front, which is exactly the case while the setup window is open. So the row went green, nothing had been granted, and dictation kept landing on the clipboard. One question now, asked the same way everywhere.</li>
+<li>If you flip the switch for Accessibility or Input Monitoring while Cueshot is running, setup says right there that it only reaches a freshly started Cueshot, and offers the restart.</li>
 </ul>]]></description>
-            <enclosure url="https://github.com/Tobbse007/cueshot-releases/releases/download/v1.2.2/Cueshot.dmg" length="14897798" type="application/octet-stream" sparkle:edSignature="59Hv/cFyAslCsURp7ZtHS/veuiZhwuZNRW6Vu5UNVeghINdPwikQfTo36zvafIjXlAA3AhREh5khctAV9dmpAg=="/>
+            <enclosure url="https://github.com/Tobbse007/cueshot-releases/releases/download/v1.2.3/Cueshot.dmg" length="14897940" type="application/octet-stream" sparkle:edSignature="DD0z1FcCdiZsHqamU008lOw781kLmi/V/VYjHO86jph5AEiUzJhPnWXehFf/608RHqpDVQGA6v05emvtUy5yBw=="/>
         </item>
     </channel>
 </rss>
