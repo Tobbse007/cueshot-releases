@@ -3,19 +3,75 @@
     <channel>
         <title>Cueshot</title>
         <item>
-            <title>1.2.3</title>
-            <pubDate>Mon, 21 Sep 2026 16:46:35 +0200</pubDate>
+            <title>1.3.0</title>
+            <pubDate>Tue, 22 Sep 2026 23:45:16 +0200</pubDate>
             <link>https://github.com/Tobbse007/cueshot-releases/releases</link>
-            <sparkle:version>203</sparkle:version>
-            <sparkle:shortVersionString>1.2.3</sparkle:shortVersionString>
+            <sparkle:version>237</sparkle:version>
+            <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h2 style="margin-top:0">What's new in 1.2.3</h2>
+            <description><![CDATA[<h2 style="margin-top:0">What's new in 1.3.0</h2>
 <ul>
-<li>Accessibility no longer reports itself as granted when it isn&#x27;t. Setup asked macOS twice: once properly, and once by trying to read the frontmost app — in the belief that this only works with the permission. It also works without it when Cueshot itself is in front, which is exactly the case while the setup window is open. So the row went green, nothing had been granted, and dictation kept landing on the clipboard. One question now, asked the same way everywhere.</li>
-<li>If you flip the switch for Accessibility or Input Monitoring while Cueshot is running, setup says right there that it only reaches a freshly started Cueshot, and offers the restart.</li>
+<li>Setup goes through the four macOS permissions by itself. No &quot;Grant all&quot; to press first, no per-row buttons: it starts when you tap Set up and moves on the moment a switch flips.</li>
+<li>One window per permission instead of two. macOS shows its own dialog the first time, and that dialog already leads to System Settings — so Cueshot no longer pushes a second window in front of it. It only opens Settings when nothing else did.</li>
+<li>One restart at the end instead of one per permission. Cueshot collects what needs a fresh start and asks once, after all four are set — and picks up exactly where it was. If macOS offers &quot;Quit &amp; Reopen&quot; in between, setup says to choose Later.</li>
+<li>The speech model downloads in the background from the moment setup begins, and keeps going across a restart. It&#x27;s no longer a step you wait on; it only shows up at the end, before dictation, and only if it isn&#x27;t finished yet.</li>
+<li>A new step for your keys, right after the permissions: one trigger per action, changeable on the spot — and the last step then asks for exactly those keys instead of the factory ones.</li>
+<li>Your coding agent connects by itself when that step opens. If it&#x27;s already connected, the heading says so instead of asking again. The MCP entry for any other agent sits below, always, with a line about the server running on this Mac.</li>
+<li>The last step goes through all three: dictate into a field in the window, take a screenshot, make a recording with a mark in the middle. After each one, a mock terminal shows how your agent picks it up — and which key drops it into your agent&#x27;s input field.</li>
+<li>The first screen is a welcome again: what Cueshot does, in three lines. No key combinations, no fn-key warning before you know what the app is for.</li>
+<li>System Settings opens next to the setup window, sized to show the list — once Accessibility is granted, Cueshot can place it there. Before that, it simply comes in front.</li>
+<li>The draggable icon finds its own place: right of System Settings when there&#x27;s room, otherwise left, below, or over the window — and its arrow always points at the list.</li>
+<li>Fixed: System Settings could appear to open twice. It no longer restarts between permissions.</li>
+<li>The switch for anonymous usage counts is on the first setup page, on by default — one click turns it off, there or later in Settings. Nothing is counted before that page was shown.</li>
+<li>Cueshot now opens at login, so your keys still work after the Mac restarts. The switch sits at the end of setup, on by default.</li>
+<li>Insert where you capture: hold ⌃ and tap the right ⌘ to drop the last screenshot into the field you&#x27;re in; hold ⌃ and tap the right ⌥ to type the line that sends your agent to the last capture. Both can be changed in Settings → Shortcuts, back to a key combination if you like.</li>
+<li>Setup moves on only when the switch flips — or when you press “Skip this one”. Clicking into the Cueshot window no longer counts as “done with this one”.</li>
+<li>The speech model is fetched by a small helper process that outlives the restart in the middle of setup. Download and preparation run through uninterrupted; the app picks the finished model up in seconds. It starts the moment Cueshot first opens — even before the question about moving to Applications.</li>
+<li>If the model isn&#x27;t there yet when the last step opens, the walkthrough starts with the screenshot and the recording and ends with dictation.</li>
+<li>Dictation recognizes “Cueshot”: “Q Shot”, “Cue Shot”, “Gierschot” and the like all come out as Cueshot. Existing word lists get the entry on the next start.</li>
+<li>The dictation step shows a sentence to read aloud.</li>
+<li>The small “open System Settings / deny” dialog for Screen Recording is handled the instant it appears, even while macOS is still asking.</li>
+<li>Bigger, rounder, more Cueshot: icons on soft blue tiles, cards with the website&#x27;s rounding, and the three try-it parts slide instead of jumping.</li>
+<li>Fixed: a Screen Recording or Input Monitoring switch you flipped wasn&#x27;t picked up until a restart. Those two permissions are cached per process; Cueshot now asks a fresh helper process, which sees the real state within a second.</li>
+<li>Fixed: the little “Open System Settings / Deny” dialog stayed on screen. It belongs to a system process the watcher didn&#x27;t know — now it&#x27;s handled, and the page opens directly.</li>
+<li>The setup window no longer slides around. While a permission is being set, System Settings simply comes in front of it.</li>
+<li>At the last permission, “Quit &amp; Reopen” is left for you to click — that&#x27;s the one restart, so it makes sense right there.</li>
+<li>Each shortcut on the Keys step is a proper control now: a bordered box that says “Change”.</li>
+<li>Setup now looks like Cueshot, not like a system dialog: the Geist typeface from the website, the website&#x27;s buttons with their hover and press, brand lines and greys instead of Apple&#x27;s defaults.</li>
+<li>Fixed: Cueshot could be missing from the Screen Recording list, and a switch you flipped wasn&#x27;t picked up. Asking macOS for permission is what creates the entry and refreshes the state — a silent check does neither.</li>
+<li>The draggable icon now appears for every permission that has a list, not just Input Monitoring.</li>
+<li>Setup steps aside instead of covering System Settings: it slides to the left edge and moves System Settings to the right, so nothing hides the switch you&#x27;re looking for.</li>
+<li>Screen Recording no longer asks “Open System Settings or Deny” first — that question decided nothing. Setup goes straight to the right page.</li>
+<li>Cueshot&#x27;s mark and name now sit above every step, and steps slide instead of jumping.</li>
+<li>Fixed: in dark mode, setup was white text on a light background — unreadable. The window now carries the light appearance that its background assumes.</li>
+<li>Setup stays in front. It used to slip behind whatever you clicked — which is fatal for a window telling you what to click.</li>
+<li>Setup looks like Cueshot now: the same linen-to-magnolia ground as the installer window, white cards instead of grey fills, bigger type, more air.</li>
+<li>Setup explains before it asks. The permissions step now opens with four lines — Microphone *to hear you*, Accessibility *to type for you*, Screen Recording *to see your screen*, Input Monitoring *so your keys arrive* — and a button. Nothing is requested until you press it.</li>
+<li>The window is bigger and quieter: fewer words, set larger.</li>
+<li>Fixed: after allowing the microphone, nothing seemed to happen. Cueshot was closing System Settings a moment after the next permission had just opened them.</li>
+<li>“Quit &amp; Reopen” no longer interrupts you. macOS asks that after every switch you flip, because Cueshot is running. From the second permission on, Cueshot clicks “Later” for you before you ever see it — and closes System Settings once a permission is set, so windows don&#x27;t pile up. One restart, at the end, when all four are in.</li>
+<li>Permissions now go Microphone → Accessibility → Screen Recording → Input Monitoring. Accessibility comes second on purpose: it&#x27;s what lets Cueshot tidy up the dialogs and point at the right spot for the rest.</li>
+<li>Input Monitoring is the one permission macOS won&#x27;t list you for automatically — so Cueshot floats a draggable icon next to System Settings: drag it into the list, done. No +, no file dialog. If that isn&#x27;t available, the setup window shows the + route in three drawn pictures instead of a paragraph.</li>
+<li>Permissions now go Microphone → Screen Recording → Accessibility → Input Monitoring. The hardest one comes last, on purpose: by then Cueshot may look at the System Settings window and point you at the right spot.</li>
+<li>Tell us what&#x27;s wrong, from inside the app. Under Feedback — or &quot;Send feedback…&quot; in the menu bar — you can report a problem or ask for a feature. Before you send, the window shows the exact text that leaves your Mac: what you typed, which kind you picked, and, only if you leave the switch on, the version and your macOS. No screenshot, no recording, no log, and not the random number used for the usage counts — a message never turns into a file on you. Each one gets a ticket number you can quote.</li>
+<li>If it can&#x27;t go out, it isn&#x27;t lost: the text stays, and you can copy it or send it by email instead.</li>
+<li>Cueshot no longer warns about Claude&#x27;s Quick Entry on ⌥⌥ when you&#x27;ve switched it off. It was reading the wrong settings file and treating &quot;not found&quot; as &quot;still on&quot;.</li>
+<li>Set your own shortcuts. Click a combination under Shortcuts, press the one you want, done — for screenshot, recording, dictation, marking, and the three insert actions. Escape cancels, Delete restores the factory setting.</li>
+<li>Cueshot says no to a combination that would cause trouble: one without ⌘ ⌥ ⌃ ⇧ would swallow that key everywhere, one that another Cueshot action already has would make one of the two lose, and one another app has taken would never arrive. Each of those says so instead of failing silently.</li>
+<li>While you&#x27;re pressing a new combination, Cueshot&#x27;s own shortcuts are off — so setting ⌥⌥ doesn&#x27;t start a recording instead of being saved.</li>
+<li>One trigger per action instead of two lists. Screenshot, Recording and Dictation used to have a double-tap *and* a key combination, listed twice under Shortcuts. Now each has one, and one click changes it: pick a simple trigger, record your own, or turn it off.</li>
+<li>When another app listens to the same double-tap — Claude&#x27;s Quick Entry on ⌥⌥, for instance — Cueshot offers to move to a free trigger with one click, instead of only naming the problem.</li>
+<li>A permission you granted before and that suddenly counts as missing is called by its name. That happens when macOS is holding the permission for a version of Cueshot that no longer exists: the switch looks right and does nothing. Cueshot says so and clears the entry for you.</li>
+<li>Permissions survive updates. Every version since 1.1.1 carries the same signature, so macOS keeps what you granted — nothing to set up again after an update.</li>
+<li>A new look throughout. Setup, the window and the menu now share one design: white above, a slow river of blue below, buttons that press in and spring back, switches that stretch when you hold them, and a selection that glides instead of jumping.</li>
+<li>A new typeface: Mona Sans for everything you read, wide and bold for headlines, with Martian Mono on the keycaps.</li>
+<li>The menu under the Cueshot icon is now a command palette: type to search, arrow keys and Return to run, Esc to close. Your shortcuts show as keycaps, recent captures with their kind and app, and while a recording runs a red bar with the time and a Stop button sits on top. Right-click or ⌥-click the icon for the classic menu.</li>
+<li>Setup steps now slide in with a soft blur, the step bar at the top fills as you go, and the speech-model download shows a real progress bar.</li>
+<li>The screenshot toolbar and the recording bar match the rest of Cueshot: white, with the chosen tool in dark blue and a red Stop button.</li>
+<li>With “Reduce motion” on in macOS, everything fades instead of moving.</li>
 </ul>]]></description>
-            <enclosure url="https://github.com/Tobbse007/cueshot-releases/releases/download/v1.2.3/Cueshot.dmg" length="14897940" type="application/octet-stream" sparkle:edSignature="DD0z1FcCdiZsHqamU008lOw781kLmi/V/VYjHO86jph5AEiUzJhPnWXehFf/608RHqpDVQGA6v05emvtUy5yBw=="/>
+            <enclosure url="https://github.com/Tobbse007/cueshot-releases/releases/download/v1.3.0/Cueshot.dmg" length="15768380" type="application/octet-stream" sparkle:edSignature="5QqeARZoHEvCtlvRVThkEHuu92d29HxnBZJHkZMGZXi+faW3pDYI0P+6G7wqjemxsZcGLGp9M5fFKQDzM3SZBA=="/>
         </item>
     </channel>
 </rss>
