@@ -4,9 +4,9 @@
         <title>Cueshot</title>
         <item>
             <title>1.4.0</title>
-            <pubDate>Thu, 15 Oct 2026 20:41:53 +0200</pubDate>
+            <pubDate>Fri, 16 Oct 2026 09:29:41 +0200</pubDate>
             <link>https://github.com/Tobbse007/cueshot-releases/releases</link>
-            <sparkle:version>685</sparkle:version>
+            <sparkle:version>688</sparkle:version>
             <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
@@ -29,7 +29,7 @@
 <li>Mute your microphone while recording. One button in the recording bar and in the notch — struck through and amber when muted: the picture keeps going, your voice is left out of the video, the text and the sound, and your agent reads “Microphone muted 01:10–01:42”. Dictating with fn, or answering your agent&#x27;s question out loud, during a recording mutes it for you.</li>
 <li>The notch tells you what your agent took. “Claude Code · cueshot took 2 screenshots”, “… took the recording”, “… took the bundle (3 items)” — once, together when it takes several, never in the middle of dictating, recording or a question. Something your agent fetches on its own — the last screenshot, say — leaves the bundle, so it never gets it twice.</li>
 </ul>]]></description>
-            <enclosure url="https://github.com/Tobbse007/cueshot-releases/releases/download/v1.4.0/Cueshot.dmg" length="21888634" type="application/octet-stream" sparkle:edSignature="pBofXibZ2a3d/wv/2kVfZ53Ks/p7YgMpTw6b3wVMAJXRwRxKeTNgERYg0vPaofuNi65skNqdmriPbZDhmTtgBg=="/>
+            <enclosure url="https://github.com/Tobbse007/cueshot-releases/releases/download/v1.4.0/Cueshot.dmg" length="21901103" type="application/octet-stream" sparkle:edSignature="sfoB827LpAYAoUBjoNuFLq2CwtvkmtdtP5Bn87/Y4kR+Qk2a5mkvZJBty8tBznFB84tHD0oKlke4S1CfRbhKCg=="/>
         </item>
     </channel>
 </rss>
